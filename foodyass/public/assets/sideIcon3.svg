@@ -1,0 +1,21 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#233e76" />
+      <stop offset="100%" stop-color="#36a432" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Code brackets -->
+  <path d="M8,11 L6,13 L8,15 L10,13 Z" fill="url(#primaryGradient)" />
+  
+  <!-- "YC" - Bigger and centered -->
+  <text x="22" y="28" font-family="'Fira Code', 'Courier New', monospace" 
+        font-size="24" font-weight="700" fill="url(#primaryGradient)" text-anchor="middle" 
+        dominant-baseline="middle">
+    YC
+  </text>
+  
+  <!-- Closing bracket -->
+  <path d="M36,11 L38,13 L36,15 L34,13 Z" fill="url(#primaryGradient)" />
+</svg>

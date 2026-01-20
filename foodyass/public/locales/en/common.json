@@ -1,0 +1,19 @@
+{
+  "languages": {
+    "en": "English",
+    "fr": "French",
+    "ar": "Arabic",
+    "es": "Spanish",
+    "am": "Tamazight"
+  },
+  "drawerNav": {
+    "home": "Home",
+    "discoverPlatform": "Discover platform",
+    "userSpace": "User space",
+    "mtAcademy": "MT Academy",
+    "community": "Community & Partnerships",
+    "media": "Media & Resources",
+    "contact": "Contact & assistance",
+    "closeMenu": "close menu"
+  }
+}

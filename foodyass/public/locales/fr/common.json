@@ -1,0 +1,20 @@
+{
+  "languages": {
+    "en": "Anglais",
+    "fr": "Français",
+    "ar": "Arabe",
+    "es": "Espagnol",
+    "am": "Tamazight"
+  },
+
+  "drawerNav": {
+    "home": "Accueil",
+    "discoverPlatform": "Découvrir plateforme",
+    "userSpace": "Espace utilisateurs",
+    "mtAcademy": "MT Académie",
+    "community": "Communauté & Partenariats",
+    "media": "Médias & Ressources",
+    "contact": "Contact & assistance",
+    "closeMenu": "fermer le menu"
+  }
+}
