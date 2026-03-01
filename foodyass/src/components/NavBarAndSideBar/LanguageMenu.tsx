@@ -73,8 +73,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({ changeLanguage }) => {
     <div className="relative inline-block" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="text-light-onSurface dark:text-dark-onSurface flex items-center hover:bg-light-primaryContainer/40 dark:hover:bg-dark-primaryContainer/40 gap-2 px-2 py-1 rounded-lg cursor-pointer transition duration-200"
-      >
+        className="text-light-onSurface dark:text-dark-onSurface flex items-center hover:bg-light-secondaryContainer dark:hover:bg-dark-secondaryContainer gap-2 p-2.5 rounded-full cursor-pointer transition-all duration-200">
         <Image
           src={currentFlag}
           alt="current language"
@@ -85,32 +84,28 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({ changeLanguage }) => {
 
       {isOpen && (
         <div
-          className={`absolute mt-2 bg-light-background dark:bg-dark-background z-[9999] shadow-lg rounded-md w-48 text-light-primary dark:text-dark-primary text-body-large ${
+          className={`absolute mt-2 bg-light-surfaceContainer dark:bg-dark-surfaceContainer z-[9999] shadow-lg rounded-2xl w-48 text-light-onSurface dark:text-dark-onSurface text-body-large border border-light-outlineVariant dark:border-dark-outlineVariant p-2 ${
             i18n.language === "ar" ? "left-0" : "right-0"
-          }`}
-        >
-          <div
+          }`}>
+          {/* <div
             onClick={() => handleLanguageChange("ar")}
-            className="flex items-center gap-2 p-2 hover:bg-light-primaryContainer/60 dark:hover:bg-dark-primaryContainer/60 cursor-pointer rounded-md transition duration-200"
-          >
+            className="flex items-center gap-3 p-3 hover:bg-light-secondaryContainer dark:hover:bg-dark-secondaryContainer cursor-pointer rounded-full transition-all duration-200">
             <Image src={moroccoFlag} alt="arabic" width={20} height={20} />
             <span>{t("languages.ar")}</span>
-          </div>
+          </div> */}
           <div
             onClick={() => handleLanguageChange("en")}
-            className="flex items-center gap-2 p-2 hover:bg-light-primaryContainer/60 dark:hover:bg-dark-primaryContainer/60 cursor-pointer rounded-md transition duration-200"
-          >
+            className="flex items-center gap-3 p-3 hover:bg-light-secondaryContainer dark:hover:bg-dark-secondaryContainer cursor-pointer rounded-full transition-all duration-200">
             <Image src={ukFlag} alt="uk" width={20} height={20} />
             <span>{t("languages.en")}</span>
           </div>
 
-          <div
+          {/* <div
             onClick={() => handleLanguageChange("fr")}
-            className="flex items-center gap-2 p-2 hover:bg-light-primaryContainer/60 dark:hover:bg-dark-primaryContainer/60 cursor-pointer rounded-md transition duration-200"
-          >
+            className="flex items-center gap-3 p-3 hover:bg-light-secondaryContainer dark:hover:bg-dark-secondaryContainer cursor-pointer rounded-full transition-all duration-200">
             <Image src={franceFlag} alt="French" width={20} height={20} />
             <span>{t("languages.fr")}</span>
-          </div>
+          </div> */}
         </div>
       )}
     </div>

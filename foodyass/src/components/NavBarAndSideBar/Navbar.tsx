@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-import logo from "@/public/assets/img1.jpg";
 import menuNormal from "@/public/assets/menuNormal.svg";
 
 import LanguageMenu from "./LanguageMenu";
 import { DrawerNav } from "./DrawerNav";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -40,25 +40,26 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex fixed lg:px-40 z-50 justify-between items-center h-24 w-full p-6 bg-light-background dark:bg-dark-background">
+    <div className="flex fixed z-50 justify-between items-center h-24 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-40 bg-light-surface dark:bg-dark-surface shadow-md border-b border-light-outlineVariant dark:border-dark-outlineVariant backdrop-blur-sm">
       {/* Homepage link */}
-      <Link href="/" className="text-label-large font-roboto font-medium">
-        <Image src={logo} alt="yassine" className="w-10 h-10 rounded-full" />
+      <Link
+        href="/"
+        className="text-label-large font-roboto font-medium hover:opacity-80 transition-opacity">
+        <Logo size={45} />
       </Link>
 
       {/* Desktop navbar */}
       <div className="hidden lg:flex items-center">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center gap-1">
           {navLinks.map((link) => (
             <Link
-              className={`py-2 px-2.5 rounded-full text-label-large font-semibold transition-colors ${
+              className={`py-2.5 px-4 rounded-full text-label-large font-semibold transition-all duration-200 ${
                 isActive(link.path)
-                  ? "text-light-primary dark:text-dark-primary hover:text-light-primary dark:hover:text-dark-primary"
-                  : "text-light-onSurface dark:text-dark-onSurface hover:text-light-primary dark:hover:text-dark-primary"
+                  ? "bg-light-secondaryContainer dark:bg-dark-secondaryContainer text-light-onSecondaryContainer dark:text-dark-onSecondaryContainer shadow-sm"
+                  : "text-light-onSurface dark:text-dark-onSurface hover:bg-light-surfaceContainerHighest dark:hover:bg-dark-surfaceContainerHighest hover:text-light-primary dark:hover:text-dark-primary"
               }`}
               href={link.path}
-              key={link.title}
-            >
+              key={link.title}>
               {link.title}
             </Link>
           ))}
@@ -74,9 +75,8 @@ const Navbar = () => {
         <div className="lg:hidden flex">
           <button
             onClick={openDrawer}
-            className="p-2 hover:bg-light-primaryContainer/40 dark:hover:bg-dark-primaryContainer/40 rounded-md"
-            aria-label={t("drawerNav.closeMenu")}
-          >
+            className="p-2.5 hover:bg-light-secondaryContainer dark:hover:bg-dark-secondaryContainer rounded-full transition-colors duration-200"
+            aria-label={t("drawerNav.closeMenu")}>
             <Image
               src={menuNormal}
               className="filter-white"

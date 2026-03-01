@@ -5,14 +5,13 @@ import { LocaleLayoutProps } from "@/types/children";
 import ClientRoot from "@/components/ClientRoot";
 
 export const metadata: Metadata = {
-  title: "Mon Toubib",
-  description:
-    "Mon Toubib, la solution innovante pour faciliter l'accès aux soins !",
+  title: "food",
+  description: "food, la solution innovante pour faciliter l'accès aux soins !",
 };
 
 export default async function LocaleLayout({ children }: LocaleLayoutProps) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="overflow-x-hidden">
       <ClientRoot>{children}</ClientRoot>
     </html>
   );

@@ -36,7 +36,7 @@ export default function ClientLayout({
   return (
     <>
       <Navbar />
-      <main className="">{children}</main>
+      <main className="overflow-x-hidden w-full">{children}</main>
       <Footer />
     </>
   );

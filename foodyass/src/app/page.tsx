@@ -134,16 +134,14 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold"
-                >
+                  className="group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold">
                   Book Your Event
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
 
                 <Link
                   href="/services"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-amber-600 text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-all duration-300 text-lg font-semibold"
-                >
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-amber-600 text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-all duration-300 text-lg font-semibold">
                   View Services
                 </Link>
               </div>
@@ -152,15 +150,13 @@ export default function Home() {
               <div className="flex items-center gap-6 pt-4">
                 <a
                   href="tel:+1234567890"
-                  className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
-                >
+                  className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
                   <Phone className="w-5 h-5" />
                   <span className="font-medium">+1 (234) 567-890</span>
                 </a>
                 <a
                   href="mailto:info@tastefulevents.com"
-                  className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
-                >
+                  className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
                   <Mail className="w-5 h-5" />
                   <span className="font-medium">info@tastefulevents.com</span>
                 </a>
@@ -218,8 +214,7 @@ export default function Home() {
               return (
                 <div
                   key={index}
-                  className="text-center group hover:scale-105 transition-transform duration-300"
-                >
+                  className="text-center group hover:scale-105 transition-transform duration-300">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 mb-4 group-hover:shadow-lg transition-shadow">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
@@ -255,11 +250,9 @@ export default function Home() {
               return (
                 <div
                   key={index}
-                  className="group p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
-                >
+                  className="group p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
                   <div
-                    className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}
-                  >
+                    className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <Icon className="w-full h-full text-white" />
                   </div>
 
@@ -273,8 +266,7 @@ export default function Home() {
 
                   <Link
                     href="/services"
-                    className="inline-flex items-center gap-2 mt-6 text-amber-600 dark:text-amber-400 font-medium group-hover:gap-3 transition-all"
-                  >
+                    className="inline-flex items-center gap-2 mt-6 text-amber-600 dark:text-amber-400 font-medium group-hover:gap-3 transition-all">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -338,8 +330,7 @@ export default function Home() {
 
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold mt-6"
-              >
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold mt-6">
                 Learn More About Us
                 <ArrowRight className="w-5 h-5" />
               </Link>
@@ -364,8 +355,7 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
-              >
+                className="p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
@@ -423,8 +413,7 @@ export default function Home() {
             ].map((src, index) => (
               <div
                 key={index}
-                className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer"
-              >
+                className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer">
                 <Image
                   src={src}
                   alt={`Event ${index + 1}`}
@@ -440,8 +429,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/events"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white dark:bg-gray-800 text-amber-600 dark:text-amber-400 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold"
-            >
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white dark:bg-gray-800 text-amber-600 dark:text-amber-400 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold">
               View Full Gallery
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -466,23 +454,21 @@ export default function Home() {
                 </h2>
 
                 <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-                  Let's start planning your perfect event today. Get in touch
-                  for a free consultation and custom quote.
+                  Let&apos;s start planning your perfect event today. Get in
+                  touch for a free consultation and custom quote.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-amber-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold"
-                  >
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-amber-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold">
                     Get Started Now
                     <ArrowRight className="w-5 h-5" />
                   </Link>
 
                   <a
                     href="tel:+1234567890"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white text-white hover:bg-white/10 transition-all duration-300 text-lg font-semibold"
-                  >
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white text-white hover:bg-white/10 transition-all duration-300 text-lg font-semibold">
                     <Phone className="w-5 h-5" />
                     Call Us Now
                   </a>

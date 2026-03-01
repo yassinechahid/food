@@ -77,8 +77,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-white/10 hover:bg-gradient-to-br hover:from-amber-500 hover:to-orange-600 transition-all duration-300 group"
-                  aria-label={social.label}
-                >
+                  aria-label={social.label}>
                   <div className="group-hover:scale-110 transition-transform">
                     {social.icon}
                   </div>
@@ -97,8 +96,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-amber-400 transition-colors duration-200 inline-flex items-center gap-2 group"
-                  >
+                    className="text-gray-300 hover:text-amber-400 transition-colors duration-200 inline-flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-amber-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {link.label}
                   </Link>
@@ -117,8 +115,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-amber-400 transition-colors duration-200 inline-flex items-center gap-2 group"
-                  >
+                    className="text-gray-300 hover:text-amber-400 transition-colors duration-200 inline-flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-amber-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {link.label}
                   </Link>
@@ -136,8 +133,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+1234567890"
-                  className="flex items-start gap-3 text-gray-300 hover:text-amber-400 transition-colors duration-200 group"
-                >
+                  className="flex items-start gap-3 text-gray-300 hover:text-amber-400 transition-colors duration-200 group">
                   <Phone className="w-5 h-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                   <div>
                     <div className="font-medium">Phone</div>
@@ -148,8 +144,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@tastefulevents.com"
-                  className="flex items-start gap-3 text-gray-300 hover:text-amber-400 transition-colors duration-200 group"
-                >
+                  className="flex items-start gap-3 text-gray-300 hover:text-amber-400 transition-colors duration-200 group">
                   <Mail className="w-5 h-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                   <div>
                     <div className="font-medium">Email</div>
@@ -187,16 +182,15 @@ export default function Footer() {
                 Get updates on special offers and new menu items
               </p>
             </div>
-            <form className="flex gap-3 w-full md:w-auto">
+            <form className="flex flex-col sm:flex-row gap-3 w-full md:w-auto max-w-md md:max-w-none">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-6 py-3 rounded-full bg-white/10 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 min-w-[250px]"
+                className="px-6 py-3 rounded-full bg-white/10 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 w-full sm:min-w-[250px]"
               />
               <button
                 type="submit"
-                className="px-8 py-3 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 whitespace-nowrap"
-              >
+                className="px-8 py-3 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 whitespace-nowrap">
                 Subscribe
               </button>
             </form>
@@ -221,14 +215,12 @@ export default function Footer() {
             <div className="flex gap-6">
               <Link
                 href="/privacy"
-                className="hover:text-amber-400 transition-colors duration-200"
-              >
+                className="hover:text-amber-400 transition-colors duration-200">
                 Privacy Policy
               </Link>
               <Link
                 href="/terms"
-                className="hover:text-amber-400 transition-colors duration-200"
-              >
+                className="hover:text-amber-400 transition-colors duration-200">
                 Terms of Service
               </Link>
             </div>

@@ -212,8 +212,7 @@ export default function ServicesPage() {
             return (
               <div
                 key={index}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${isEven ? "" : "lg:grid-flow-dense"}`}
-              >
+                className={`grid lg:grid-cols-2 gap-12 items-center ${isEven ? "" : "lg:grid-flow-dense"}`}>
                 <div className={`relative ${isEven ? "" : "lg:col-start-2"}`}>
                   <div className="rounded-3xl overflow-hidden shadow-2xl">
                     <Image
@@ -226,15 +225,13 @@ export default function ServicesPage() {
                   </div>
 
                   <div
-                    className={`absolute -top-6 ${isEven ? "-right-6" : "-left-6"} w-24 h-24 rounded-2xl bg-gradient-to-br ${service.color} p-5 shadow-xl`}
-                  >
+                    className={`absolute top-3 ${isEven ? "right-3" : "left-3"} w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 rounded-xl sm:rounded-2xl bg-gradient-to-br ${service.color} p-2.5 sm:p-3 md:p-3.5 shadow-lg sm:shadow-xl`}>
                     <Icon className="w-full h-full text-white" />
                   </div>
                 </div>
 
                 <div
-                  className={`space-y-6 ${isEven ? "" : "lg:col-start-1 lg:row-start-1"}`}
-                >
+                  className={`space-y-6 ${isEven ? "" : "lg:col-start-1 lg:row-start-1"}`}>
                   <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
                     {service.title}
                   </h2>
@@ -247,8 +244,7 @@ export default function ServicesPage() {
                     {service.features.map((feature, fIndex) => (
                       <div key={fIndex} className="flex items-center gap-3">
                         <div
-                          className={`w-8 h-8 rounded-full bg-gradient-to-br ${service.color} flex items-center justify-center flex-shrink-0`}
-                        >
+                          className={`w-8 h-8 rounded-full bg-gradient-to-br ${service.color} flex items-center justify-center flex-shrink-0`}>
                           <Check className="w-4 h-4 text-white" />
                         </div>
                         <span className="text-gray-700 dark:text-gray-300 font-medium">
@@ -260,8 +256,7 @@ export default function ServicesPage() {
 
                   <Link
                     href="/contact"
-                    className={`inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r ${service.color} text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold mt-6`}
-                  >
+                    className={`inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r ${service.color} text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold mt-6`}>
                     Request Quote
                     <ArrowRight className="w-5 h-5" />
                   </Link>
@@ -290,8 +285,7 @@ export default function ServicesPage() {
               return (
                 <div
                   key={index}
-                  className="p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
-                >
+                  className="p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-4 mb-6">
                     <Icon className="w-full h-full text-white" />
                   </div>
@@ -304,8 +298,7 @@ export default function ServicesPage() {
                     {category.items.map((item, iIndex) => (
                       <li
                         key={iIndex}
-                        className="text-gray-600 dark:text-gray-300 flex items-start gap-2"
-                      >
+                        className="text-gray-600 dark:text-gray-300 flex items-start gap-2">
                         <span className="text-amber-600 mt-1">•</span>
                         <span>{item}</span>
                       </li>
@@ -323,8 +316,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold"
-            >
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold">
               Customize Your Menu
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -352,8 +344,7 @@ export default function ServicesPage() {
                   pkg.popular
                     ? "bg-gradient-to-br from-amber-600 to-rose-600 text-white shadow-2xl scale-105"
                     : "bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700"
-                } transition-all duration-300 hover:scale-105`}
-              >
+                } transition-all duration-300 hover:scale-105`}>
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <div className="px-6 py-2 rounded-full bg-white text-amber-600 font-bold text-sm shadow-lg">
@@ -364,19 +355,16 @@ export default function ServicesPage() {
 
                 <div className="text-center mb-8">
                   <h3
-                    className={`text-3xl font-bold mb-2 ${pkg.popular ? "text-white" : "text-gray-900 dark:text-white"}`}
-                  >
+                    className={`text-3xl font-bold mb-2 ${pkg.popular ? "text-white" : "text-gray-900 dark:text-white"}`}>
                     {pkg.name}
                   </h3>
                   <div className="flex items-end justify-center gap-1">
                     <span
-                      className={`text-5xl font-bold ${pkg.popular ? "text-white" : "bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent"}`}
-                    >
+                      className={`text-5xl font-bold ${pkg.popular ? "text-white" : "bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent"}`}>
                       {pkg.price}
                     </span>
                     <span
-                      className={`text-lg mb-2 ${pkg.popular ? "text-white/80" : "text-gray-600 dark:text-gray-400"}`}
-                    >
+                      className={`text-lg mb-2 ${pkg.popular ? "text-white/80" : "text-gray-600 dark:text-gray-400"}`}>
                       {pkg.unit}
                     </span>
                   </div>
@@ -390,8 +378,7 @@ export default function ServicesPage() {
                           pkg.popular
                             ? "bg-white/20"
                             : "bg-amber-100 dark:bg-amber-900/30"
-                        }`}
-                      >
+                        }`}>
                         <Check
                           className={`w-4 h-4 ${pkg.popular ? "text-white" : "text-amber-600 dark:text-amber-400"}`}
                         />
@@ -401,8 +388,7 @@ export default function ServicesPage() {
                           pkg.popular
                             ? "text-white"
                             : "text-gray-700 dark:text-gray-300"
-                        }
-                      >
+                        }>
                         {feature}
                       </span>
                     </li>
@@ -415,8 +401,7 @@ export default function ServicesPage() {
                     pkg.popular
                       ? "bg-white text-amber-600 hover:shadow-xl"
                       : "bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:shadow-xl hover:scale-105"
-                  }`}
-                >
+                  }`}>
                   Select Package
                 </Link>
               </div>
@@ -443,15 +428,13 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-amber-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold"
-            >
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-amber-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg font-semibold">
               Get Custom Quote
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href="/events"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white text-white hover:bg-white/10 transition-all duration-300 text-lg font-semibold"
-            >
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white text-white hover:bg-white/10 transition-all duration-300 text-lg font-semibold">
               View Our Work
             </Link>
           </div>

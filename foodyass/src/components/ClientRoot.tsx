@@ -21,7 +21,7 @@ export default function ClientRoot({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <body className="font-roboto bg-light-background text-light-onBackground dark:bg-dark-background dark:text-dark-onBackground">
+    <body className="font-roboto bg-light-background text-light-onBackground dark:bg-dark-background dark:text-dark-onBackground overflow-x-hidden">
       <ThemeProvider>
         <ClientLayout>{children}</ClientLayout>
       </ThemeProvider>

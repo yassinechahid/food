@@ -17,7 +17,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
 }) => {
   const { t } = useTranslation();
   const [localSearchValue, setLocalSearchValue] = useState<string>(
-    searchValue || ""
+    searchValue || "",
   );
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
   };
 
   return (
-    <div className="relative md:min-w-[720px]">
+    <div className="relative w-full md:min-w-0 md:w-auto md:max-w-[720px]">
       <input
         type="text"
         value={localSearchValue}
